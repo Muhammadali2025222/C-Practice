@@ -2,10 +2,8 @@
 #define Rectangle_cpp
 
 #include <iostream>
+
 #include "Shape.cpp"
-#include "Area.cpp"
-#include "Volume.cpp"
-#include "Input.cpp"
 
 using namespace std;
 
@@ -29,12 +27,12 @@ class Rectangle : public Shape
 
     public:
         
-        void drawShape() override
+        void draw() override
         {
             cout << "rectangle" << endl;
         }
 
-        void input() override
+        void inputDimensions() override
         {
             cout << "Enter Length" << endl;
             cin >> length;

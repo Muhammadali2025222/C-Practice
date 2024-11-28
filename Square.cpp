@@ -2,10 +2,8 @@
 #define Square_cpp
 
 #include <iostream>
+
 #include "Shape.cpp"
-#include "Area.cpp"
-#include "Volume.cpp"
-#include "Input.cpp"
 
 using namespace std;
 
@@ -27,12 +25,12 @@ class Square : public Shape
 
     public:
 
-        void drawShape() override
+        void draw() override
         {
             cout << "square" << endl;
         }
 
-        void input() override
+        void inputDimensions() override
         {
             cout << "Enter Length" << endl;
             cin >> length;
