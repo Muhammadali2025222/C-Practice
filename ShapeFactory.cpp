@@ -13,10 +13,11 @@
 using namespace std;
 
 class ShapeFactory  
+// This class follows the Single Responsibility Principle. 
 // Responsibility: This class is responsible for creating object based on user input.
 
-// This class follows the Single Responsibility Principle. 
-// This class follows the Open Closed Principle. 
+// This class doesnot follows the Open Closed Principle.
+// Reason: Because every time we add a new shape we have to alter this code to create an object of that shape. 
 
 {
 

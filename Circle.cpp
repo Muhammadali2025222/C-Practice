@@ -10,17 +10,18 @@
 
 using namespace std;
 class Circle : public Shape
-
+// This class doesnot follows the Single Responsibility Principle .
 //Responsibilities: 
 // 1 . Drawing the shape .
 // 2 . Taking user's input .
 // 3 . Calculating the computable dimensions .
 
-// This class doesnot follows the Single Responsibility Principle .
-// This class doesnot follows the Open Closed Principle .
+// This class follows the Open Closed Principle . 
+// Reason: 
+// In future if we want to add anyother dimensions or any other methods,
+// we would not have to change the signature of the methods that we are using right now. 
 
 {
-
     private:
         double radius;
         double height;
@@ -29,7 +30,6 @@ class Circle : public Shape
         double volume;
 
     public:
-        
         void draw() override
         {
             cout << "circle" << endl;
