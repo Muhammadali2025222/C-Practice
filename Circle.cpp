@@ -10,11 +10,13 @@
 
 using namespace std;
 class Circle : public Shape
+// This class doesnot follows the Single Responsibility Principle .
 //Responsibilities: 
 // 1 . Drawing the shape .
 // 2 . Taking user's input .
-// 3 . Calculating the computable dimensions .  
-// This class doesnot follows the Single Responsibility Principle . 
+// 3 . Calculating the computable dimensions .
+
+// This class follows the Open Closed Principle . 
 
 {
     private:
@@ -25,7 +27,6 @@ class Circle : public Shape
         double volume;
 
     public:
-        
         void draw() override
         {
             cout << "circle" << endl;

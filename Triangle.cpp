@@ -8,11 +8,14 @@
 using namespace std;
 
 class Triangle : public Shape  
-//Responsibilities:
+// This class doesnot follows the Single Responsibility Principle .
+//Responsibilities: 
 // 1 . Drawing the shape .
 // 2 . Taking user's input .
 // 3 . Calculating the computable dimensions .
-//This class doesnot follows the Single Responsibility Principle . 
+
+// This class follows the Open Closed Principle . 
+
 {
     private:
         double base;
