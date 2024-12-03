@@ -13,8 +13,14 @@
 using namespace std;
 
 class ShapeFactory  
-// Responsibility: This class is responsible for creating object based on user input.
-// This class follows the Single Responsibility Principle. 
+// This class follows the Single Responsibility Principle . 
+// Responsibility: This class is responsible for creating object based on user input .
+
+// Liskov's Substitution Principle will not be applied to this class . 
+//Reasons :
+// This class doesnot have any child or parent 
+// so it cannot be substituted by another class or substitute another class .
+ 
 {
 
 public:
