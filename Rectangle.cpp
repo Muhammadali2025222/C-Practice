@@ -15,9 +15,6 @@ class Rectangle : public Shape
 // 3 . Calculating the computable dimensions .
 
 // This class follows the Open Closed Principle . 
-// Reason: 
-// In future if we want to add anyother dimensions or any other methods,
-// we would not have to change the signature of the methods that we are using right now. 
 
 {
     private:
