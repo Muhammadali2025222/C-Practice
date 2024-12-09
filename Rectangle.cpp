@@ -8,13 +8,18 @@
 using namespace std;
 
 class Rectangle : public Shape
-// This class doesnot follows the Single Responsibility Principle .
+//This class doesnot follows the Single Responsibility Principle . 
 //Responsibilities: 
 // 1 . Drawing the shape .
 // 2 . Taking user's input .
 // 3 . Calculating the computable dimensions .
 
 // This class follows the Open Closed Principle . 
+
+// The Interface Segregation Principle will not be applied to this class .
+//Reason :
+// Because the class itself is a concrete class 
+// and Interface Segregation Principle only applies to interfaces or abstract classes .
 
 {
     private:

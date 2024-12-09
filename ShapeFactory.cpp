@@ -19,6 +19,11 @@ class ShapeFactory
 // This class doesnot follows the Open Closed Principle.
 // Reason: Because every time we add a new shape we have to alter this code to create an object of that shape. 
 
+// The Interface Segregation Principle will not be applied to this class .
+//Reason :
+// Because the class itself is a concrete class 
+// and Interface Segregation Principle only applies to interfaces or abstract classes .
+
 {
 
     public:

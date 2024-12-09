@@ -2,10 +2,12 @@
 #define Volume_cpp
 
 class Volume   
-// Responsibility: This class provides a common interface for calculating Volume .
- 
 // This class follows the Single Responsibility Principle . 
+// Responsibility: This class provides a common interface for calculating Volume . 
+
 // This class follows the Open Closed Principle .
+
+// This class follows the Interface Segregation Principle .
 
 {
     public:
