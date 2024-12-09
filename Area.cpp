@@ -5,10 +5,7 @@ class Area
 // Responsibility: This class provides a common interface for calculating Area .
 
 // This class follows the Single Responsibility Principle . 
-// This class follows the Open Closed Principle .
-class Area   
-// This class follows the Single Responsibility Principle . 
-//Responsibility: This class provides a common interface for calculating Area . 
+// This class follows the Open Closed Principle .  
 
 // This class follows the Interface Segregation Principle .
 

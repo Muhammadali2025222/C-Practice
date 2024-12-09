@@ -14,7 +14,9 @@ class Circle : public Shape
 //Responsibilities: 
 // 1 . Drawing the shape .
 // 2 . Taking user's input .
-// 3 . Calculating the computable dimensions .  
+// 3 . Calculating the computable dimensions .
+
+// This class follows the Open Closed Principle . 
 
 // The Interface Segregation Principle will not be applied to this class .
 //Reason :
