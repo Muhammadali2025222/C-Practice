@@ -13,8 +13,11 @@
 using namespace std;
 
 class ShapeFactory  
-// This class follows the Single Responsibility Principle . 
-// Responsibility: This class is responsible for creating object based on user input .
+// This class follows the Single Responsibility Principle. 
+// Responsibility: This class is responsible for creating object based on user input.
+
+// This class doesnot follows the Open Closed Principle.
+// Reason: Because every time we add a new shape we have to alter this code to create an object of that shape. 
 
 // The Interface Segregation Principle will not be applied to this class .
 //Reason :
@@ -23,38 +26,38 @@ class ShapeFactory
 
 {
 
-public:
-    static Shape *create(string shapeType)
-    {
-        Shape *shapeHandler = nullptr;
-
-        switch (fromStringtoEnum(shapeType))
+    public:
+        static Shape *create(string shapeType)
         {
-        case SQUARE:
-            shapeHandler = new Square();
-            break;
+            Shape *shapeHandler = nullptr;
 
-        case RECTANGLE:
-            shapeHandler = new Rectangle();
-            break;
+            switch (fromStringtoEnum(shapeType))
+            {
+                case SQUARE:
+                    shapeHandler = new Square();
+                    break;
 
-        case CIRCLE:
-            shapeHandler = new Circle();
-            break;
+                case RECTANGLE:
+                    shapeHandler = new Rectangle();
+                    break;
 
-        case TRIANGLE:
-            shapeHandler = new Triangle();
-            break;
+                case CIRCLE:
+                    shapeHandler = new Circle();
+                    break;
 
-        case INVALID:
-            cout << "Invalid shape input." << endl;
-            break;
+                case TRIANGLE:
+                    shapeHandler = new Triangle();
+                    break;
 
-        default:
-            break;
+                case INVALID:
+                    cout << "Invalid shape input." << endl;
+                    break;
+
+                default:
+                    break;
+            }
+
+            return shapeHandler;
         }
-
-        return shapeHandler;
-    }
 };
 #endif
